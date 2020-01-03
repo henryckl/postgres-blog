@@ -29,7 +29,7 @@ class PostController {
     }
 
     const post = await Post.create({
-      user_id: 1,
+      user_id: req.userId,
       title: req.body.title,
       text: req.body.text
     });
